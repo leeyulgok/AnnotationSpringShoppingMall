@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+  <definition name="root.*" template="/WEB-INF/view/inc/layout.jsp">
+    <put-attribute name="header" value="/WEB-INF/view/inc/header.jsp" />
+    <put-attribute name="body" value="/WEB-INF/view/{1}.jsp" />
+    <put-attribute name="footer" value="/WEB-INF/view/inc/footer.jsp" />
+  </definition>
+  <definition name="login.*" template="/WEB-INF/view/inc/layout.jsp">
+    <put-attribute name="header" value="/WEB-INF/view/inc/header.jsp" />
+    <put-attribute name="body" value="/WEB-INF/view/login/{1}.jsp" />
+    <put-attribute name="footer" value="/WEB-INF/view/inc/footer.jsp" />
+  </definition>
+  <definition name="signup.*" template="/WEB-INF/view/inc/layout.jsp">
+    <put-attribute name="header" value="/WEB-INF/view/inc/header.jsp" />
+    <put-attribute name="body" value="/WEB-INF/view/signup/{1}.jsp" />
+    <put-attribute name="footer" value="/WEB-INF/view/inc/footer.jsp" />
+  </definition>
+  <definition name="product.*" template="/WEB-INF/view/product/inc/layout.jsp">
+    <put-attribute name="header" value="/WEB-INF/view/product/inc/header.jsp" />
+    <put-attribute name="body" value="/WEB-INF/view/product/{1}.jsp" />
+    <put-attribute name="footer" value="/WEB-INF/view/product/inc/footer.jsp" />
+  </definition>
+  <definition name="cart.*" template="/WEB-INF/view/cart/inc/layout.jsp">
+    <put-attribute name="header" value="/WEB-INF/view/cart/inc/header.jsp" />
+    <put-attribute name="body" value="/WEB-INF/view/cart/{1}.jsp" />
+    <put-attribute name="footer" value="/WEB-INF/view/cart/inc/footer.jsp" />
+  </definition>
+  <definition name="mypage.*" template="/WEB-INF/view/mypage/inc/layout.jsp">
+    <put-attribute name="header" value="/WEB-INF/view/mypage/inc/header.jsp" />
+    <put-attribute name="body" value="/WEB-INF/view/mypage/{1}.jsp" />
+    <put-attribute name="footer" value="/WEB-INF/view/mypage/inc/footer.jsp" />
+  </definition>
+</tiles-definitions>
